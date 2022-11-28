@@ -12,6 +12,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Builder
 @ToString
+@Table(name = "users")
 public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
